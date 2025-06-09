@@ -4,5 +4,35 @@
     "email": "test@gmail.com",
     "password": "testpass",
     "phone": "99074663126"
+  },
+  {
+    "username": "test",
+    "email": "a@gmail.com",
+    "password": "test",
+    "phone": ""
+  },
+  {
+    "username": "steve",
+    "email": "steve@gmail.com",
+    "password": "steve",
+    "phone": ""
+  },
+  {
+    "username": "eleven",
+    "email": "eleven@gmail.com",
+    "password": "eleven",
+    "phone": ""
+  },
+  {
+    "username": "sadie",
+    "email": "sadie@gmail.com",
+    "password": "sadie",
+    "phone": ""
+  },
+  {
+    "username": "hope",
+    "email": "hope@gmail.com",
+    "password": "hope",
+    "phone": ""
   }
 ]

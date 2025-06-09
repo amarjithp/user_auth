@@ -41,9 +41,8 @@ export default function SignUpPage() {
       } else {
         setStatus({ type: 'success', message: 'User saved successfully!' });
         setForm({ username: '', email: '', password: '', phone: '' });
-        setTimeout(() => {
-          router.push('/login');
-        }, 500);
+        router.push('/login');
+
 
       }
     } catch (error: any) {
