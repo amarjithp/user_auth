@@ -1,0 +1,38 @@
+{
+  "providers": [
+    {
+      "name": "Deepgram",
+      "value": "deepgram",
+      "models": [
+        {
+          "name": "Nova-2",
+          "value": "nova-2",
+          "languages": [
+            { "name": "English-US", "value": "en-US" },
+            { "name": "Spanish", "value": "es" }
+          ]
+        },
+        {
+          "name": "Whisper",
+          "value": "whisper",
+          "languages": [
+            { "name": "French", "value": "fr" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AssemblyAI",
+      "value": "assemblyai",
+      "models": [
+        {
+          "name": "Default",
+          "value": "default",
+          "languages": [
+            { "name": "English-US", "value": "en-US" }
+          ]
+        }
+      ]
+    }
+  ]
+}

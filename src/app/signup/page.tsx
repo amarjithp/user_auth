@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 
 
 export default function SignUpPage() {
-  const router = useRouter(); 
+  const router = useRouter();
   const [form, setForm] = useState({
     username: '',
     email: '',
@@ -24,7 +24,8 @@ export default function SignUpPage() {
     e.preventDefault();
     setLoading(true);
     setStatus(null);
-
+  
+  
 
 
     try {
@@ -39,11 +40,8 @@ export default function SignUpPage() {
       if (!res.ok) {
         setStatus({ type: 'error', message: data.error || 'Failed to save user' });
       } else {
-        setStatus({ type: 'success', message: 'User saved successfully!' });
-        setForm({ username: '', email: '', password: '', phone: '' });
+        setStatus({ type: 'success', message: 'User saved successfully!' }); 
         router.push('/login');
-
-
       }
     } catch (error: any) {
       setStatus({ type: 'error', message: error.message || 'Something went wrong' });
