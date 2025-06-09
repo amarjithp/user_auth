@@ -33,17 +33,17 @@ A modern authentication and dashboard app built with **Next.js (App Router)**, *
 ```bash
 git clone https://github.com/amarjithp/user_auth.git
 cd user_auth
-
+```
 2. **Install dependencies**
 
 ```bash
 npm install
-
+```
 3. **Run the development server**
 
 ```bash
 npm run dev
-
+```
 4. **Visit the app**
 Open http://localhost:3000 in your browser.
 
@@ -58,4 +58,4 @@ You can edit src/data/users.json to pre-fill users:
     "phone": "1234567890"
   }
 ]
-
+```
