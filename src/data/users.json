@@ -2,7 +2,7 @@
   {
     "username": "overlord",
     "email": "test@gmail.com",
-    "password": "testpass",
+    "password": "test",
     "phone": "99074663126"
   },
   {
@@ -112,5 +112,17 @@
     "email": "as@gmail.com",
     "password": "as",
     "phone": ""
+  },
+  {
+    "username": "heee",
+    "email": "heee@gmail.com",
+    "password": "heee",
+    "phone": ""
+  },
+  {
+    "username": "new",
+    "email": "new@gmail.com",
+    "password": "new",
+    "phone": "10/10"
   }
 ]

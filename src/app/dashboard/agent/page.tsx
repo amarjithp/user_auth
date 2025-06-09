@@ -114,7 +114,7 @@ export default function AgentPage() {
 
       {/* Summary Card */}
       {provider && model && language && (
-        <div className="p-4 border rounded bg-white shadow mt-4">
+        <div className="p-4 border rounded bg-black shadow mt-4">
           <h2 className="text-xl font-semibold mb-2">Summary</h2>
           <ul className="space-y-1">
             <li>

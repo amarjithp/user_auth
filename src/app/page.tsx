@@ -11,6 +11,12 @@ export default function Home() {
             Sign Up
           </button>
         </Link>
+        <div></div>
+        <Link href="/login">
+          <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+            Login
+          </button>
+        </Link>
       </div>
     </main>
   );

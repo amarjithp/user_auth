@@ -105,6 +105,8 @@ export default function SignUpPage() {
         >
           {loading ? 'Saving...' : 'Sign Up'}
         </button>
+
+        <button onClick={() => router.push('/login')} className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 disabled:opacity-50">Login</button>
       </form>
     </main>
   );
