@@ -28,11 +28,9 @@ export default function AgentPage() {
   useEffect(() => {
     fetch('/stt.json')
       .then(res => res.json())
-      .then(json => setData(json.providers));
-      
+      .then(json => setData(json.stt)); // ✅ corrected key: stt instead of providers
   }, []);
 
-  // Handle dropdown changes
   const handleProviderChange = (value: string) => {
     const selected = data.find(p => p.value === value) || null;
     setProvider(selected);
@@ -54,14 +52,14 @@ export default function AgentPage() {
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-10 space-y-6 bg-black">
+    <div className="max-w-xl mx-auto mt-10 space-y-6 bg-black text-white">
       <h1 className="text-2xl font-bold mb-4">Agent Config</h1>
 
       {/* Provider Dropdown */}
       <div>
         <label className="block font-medium mb-1">Provider</label>
         <select
-          className="w-full p-2 border rounded bg-black"
+          className="w-full p-2 border rounded bg-black border-gray-700"
           value={provider?.value || ''}
           onChange={e => handleProviderChange(e.target.value)}
         >
@@ -79,7 +77,7 @@ export default function AgentPage() {
         <div>
           <label className="block font-medium mb-1">Model</label>
           <select
-            className="w-full p-2 border rounded bg-black"
+            className="w-full p-2 border rounded bg-black border-gray-700"
             value={model?.value || ''}
             onChange={e => handleModelChange(e.target.value)}
           >
@@ -98,7 +96,7 @@ export default function AgentPage() {
         <div>
           <label className="block font-medium mb-1">Language</label>
           <select
-            className="w-full p-2 border rounded bg-black"
+            className="w-full p-2 border rounded bg-black border-gray-700"
             value={language?.value || ''}
             onChange={e => handleLanguageChange(e.target.value)}
           >
@@ -114,7 +112,7 @@ export default function AgentPage() {
 
       {/* Summary Card */}
       {provider && model && language && (
-        <div className="p-4 border rounded bg-black shadow mt-4">
+        <div className="p-4 border rounded bg-black border-gray-700 shadow mt-4">
           <h2 className="text-xl font-semibold mb-2">Summary</h2>
           <ul className="space-y-1">
             <li>
